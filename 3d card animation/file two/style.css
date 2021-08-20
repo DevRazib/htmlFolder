@@ -1,0 +1,74 @@
+body{
+	background: bisque;
+}
+.team-area{
+	padding:10% 0;
+}
+.member-area{
+	position: relative;
+	transform-style: preserve-3d;
+	transition: 1s;
+}
+/*
+.team-area{
+	width: 1000px;
+	margin: 100px auto;
+	display: flex;
+	justify-content: space-between;
+}
+.single-member{
+	flex-basis: 320px;
+	height: 350px;
+	position: relative;
+	perspective: 1000px;
+	transition: 1s;
+
+}*/
+.box-front{
+	position: relative;
+	transform: rotateY(0);
+	z-index: 2;
+	margin-bottom: 30px;
+	box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+	min-height: 360px;
+}
+.box-front img{
+	width:100%;
+}
+.box-back{
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: rotateY(-180deg);
+	box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+	min-height: 360px;
+	width: 100%;
+	text-align: center;
+}
+.box-front,
+.box-back{
+	backface-visibility: hidden;
+	transition: 1s;
+	transform-style: preserve-3d;
+
+}
+.single-member:hover .box-back{
+	transform: rotateY(0);
+}
+.single-member:hover .box-front{
+	transform: rotateY(180deg);
+
+}
+.back-content{
+	padding:125px 0;
+	color:#000;
+	background:darkseagreen;
+}
+.back-content h2{
+	font-family: big john;
+	font-size: 40px;
+}
+.back-content p{
+	font-family: poppins;
+	font-size: 18px;
+}

@@ -1,0 +1,44 @@
+.wrapper{
+	background: gray;
+	width: 1020px;
+	margin: 0 auto;
+	border: 1px solid black;
+}
+.header{
+	background: yellow;
+	height: 120px;
+	padding: 10px;
+}
+.Navbar{
+	background: blue;
+}
+.main{
+	background: brown;
+}
+.leftbar{
+	background: pink;
+	width: 180px;
+	height: 350px;
+	float: left;
+	padding: 10px;
+}
+.content{
+	background: white;
+	width:600px;
+	float: left;
+	height: 350px;
+	padding: 10px;
+}
+	.rightbar {
+	background: green;
+	width: 180px;
+	float:right;
+	height: 350px;
+	padding: 10px;
+}
+
+.footer{
+	clear: both;
+	background: red;
+	height: 120px;
+}
